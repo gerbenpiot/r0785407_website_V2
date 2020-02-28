@@ -1,0 +1,189 @@
+@charset "UTF-8";
+main table, main td, main th {
+    border: 1px solid #000;
+    border-collapse: collapse; /* all borders are melted together: you don't see difference between several borders */
+}
+
+main table {
+    table-layout: fixed;
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+}
+main a:visited, footer a:visited {
+    color: chartreuse;
+}
+main a, footer a{
+    color: aqua;
+    margin-bottom: 20px;
+}
+
+main th {
+    text-align: left;
+    color: black;
+}
+
+main td, main th {
+    padding: 1em;
+    color: black;
+}
+form {
+    display: inline-block;
+    background-color: darkslategray;
+    width:98%;
+    margin: 0 auto;
+    padding: 0.4em;
+}
+form legend{
+    font-size: 2rem;
+}
+fieldset {
+    margin-top: 1em;
+    border: none;
+    margin-left:0;
+}
+
+label {
+    display:block;
+    text-align: left;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+    box-sizing: border-box;
+
+}
+
+input[type=text],
+input[type=number],
+input[type=tel],
+input[type=email],
+input[type=date],
+input[type=submit],
+input[type=url],
+textarea,
+select {
+    width:100%;
+    border: 1px solid #456;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0 .2em .2em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type=submit] {
+    margin:0.5em 0;
+    border: 1px solid #456;
+    background-color: #456;
+    color: #fff;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 20px;
+}
+p{
+    margin-top: 20px;
+}
+nav li{
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #444444;
+}
+nav li a{
+    text-decoration: none;
+    display: block;
+    padding: 2rem;
+    color: #FFFFFF;
+    transition: background-color 1s;
+    text-transform: capitalize;
+}
+nav a:hover{
+    background-color: #005f5f;
+    color: #FFFFFF;
+}
+nav ul{
+
+    background-color: #444444;
+
+}
+@media all and (min-width:38rem ) {
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    iframe{
+        width: 500px;
+        margin-bottom: 20px;
+    }
+    nav li{
+        width: calc(100%/3);
+    }
+    main table{
+        margin-left: 150px;
+    }
+    footer{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+}
+
+
+
+html body {
+    color: #FFDF36;
+    font-family: "Baskerville Old Face";
+
+}
+html body main, footer {
+    background-color: darkslategray;
+    display: block;
+
+}
