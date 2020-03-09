@@ -60,7 +60,7 @@
               width="250" height="400"  style="border:0;" allowfullscreen=""></iframe>
     </div>
   </div>
-  <a href="verzameling.jsp">Ga naar de verzameling</a>
+  <a href="Verzameling">Ga naar de verzameling</a>
 
 </main>
 <footer>

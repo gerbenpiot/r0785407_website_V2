@@ -28,29 +28,29 @@
 </header>
 <main>
     <h2>Hier kan je een bier toevoegen.</h2>
-    <form>
+    <form method="post" action="Verzameling" novalidate>
 
         <fieldset>
             <legend>Voeg een bier toe</legend>
             <p>
                 <label for="name">Naam van het bier* </label>
-                <input id="name" size="60" maxlength="128" type="text" required>
+                <input id="name" size="60" maxlength="128" type="text" name="naam" required>
             </p>
 
 
             <p>
                 <label for="waarde">Alcoholpercentage* </label>
-                <input type="number" step="any" id="waarde">
+                <input type="number" step="any" name="waarde" id="waarde">
             </p>
             <p>
                 <label for="beschrijving">Extra info over het bier. </label>
-                <textarea id="beschrijving" cols="60" rows="10"></textarea>
+                <textarea id="beschrijving" cols="60" name="beschrijving" rows="10"></textarea>
             </p>
 
             <p><input type="submit" id="submit" value="Send"></p>
         </fieldset>
     </form>
-    <p><a href="verzameling.jsp">Ga naar de verzameling</a></p>
+    <p><a href="Verzameling">Ga naar de verzameling</a></p>
 
 </main>
 <footer>

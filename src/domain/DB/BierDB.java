@@ -10,6 +10,17 @@ public class BierDB {
 
     public BierDB(){
         bieren= new ArrayList<Bier>();
+        Bier Star = new Bier("star blond","blond",0.4);
+        Bier speciale= new Bier("Speciale 1900","amber",5);
+        Bier Keizer= new Bier("Keizer Karel","bruin",9);
+        Bier nulprocent= new Bier("null");
+        Bier ander=new Bier("anders",4.3);
+
+        addBier(Star);
+        addBier(speciale);
+        addBier(Keizer);
+        addBier(nulprocent);
+       addBier(ander);
     }
     public void addBier(Bier bier){
         bieren.add(bier);
